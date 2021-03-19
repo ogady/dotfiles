@@ -14,8 +14,10 @@ fi
 
 # Customize to your needs...
 
+##############
 # peco
-## ctl+r
+##############
+## ctl+rでサジェスト表示
 function select-history() {
     local tac
     if which tac > /dev/null; then
@@ -29,6 +31,7 @@ function select-history() {
 }
 zle -N select-history
 bindkey '^r' select-history
+
 
 ##############
 # alias
