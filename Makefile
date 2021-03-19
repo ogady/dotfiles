@@ -11,6 +11,8 @@ test:
 	@echo CANDIDATES $(CANDIDATES)
 	@echo EXCLUSIONS $(EXCLUSIONS)
 	@echo DOTFILES $(DOTFILES)
+	@echo $(ROOT_PATH)'/etc/script'
+	@INITPATH=$(ROOT_PATH) bash $(ROOT_PATH)/etc/script/prezto.sh;
 
 ls:
 	@$(foreach val, $(DOTFILES), /bin/ls -dF $(val);)
