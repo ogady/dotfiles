@@ -19,11 +19,14 @@ ls:
 
 deploy:
 	@echo '==> Start to deploy dotfiles.'
+	# prezto導入
+	@INITPATH=$(ROOT_PATH) bash $(ROOT_PATH)/etc/script/prezto.sh;
+
+	# dotfilesのシンボリックリンク作成
 	@$(foreach val, $(DOTFILES), ln -sfnv $(abspath $(val)) $(HOME)/$(val);)
 	@echo '==> End to deploy dotfiles.'
 
 init:
 	@INITPATH=$(ROOT_PATH) bash $(ROOT_PATH)/etc/script/brew.sh;
-	@INITPATH=$(ROOT_PATH) bash $(ROOT_PATH)/etc/script/prezto.sh;
 
 install: deploy init
