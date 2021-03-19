@@ -1,0 +1,46 @@
+# ----------------------------------------
+#  Brewfile
+# ----------------------------------------
+tap "homebrew/cask"
+tap "homebrew/bundle"
+tap "homebrew/services"
+cask_args appdir: "/Applications"
+
+# ========== General Tools ==========
+brew "git"
+brew "ghq"
+brew "peco"
+brew "tree"
+brew "exa"
+brew "wget"
+
+# ========== App Tools ==========
+brew "awscli"
+brew "jmeter"
+brew "vegeta"
+
+brew "tfenv"
+brew "tflint"
+
+brew "nodebrew"
+
+# ========== Languages ==========
+brew "go"
+
+# ========== Applications ==========
+cask "slack"
+cask "docker"
+cask "kindle"
+cask "iterm2"
+cask "skitch"
+cask "zoomus"
+cask "postman"
+cask "cyberduck"
+cask "gpg-suite"
+cask "chromedriver"
+cask "google-chrome"
+cask "visual-studio-code"
+cask "google-japanese-ime"
+cask "deepl"
+cask "obs-virtualcam"
+mas "CotEditor", id: 1024640650
