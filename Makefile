@@ -7,6 +7,7 @@ GIT_EMAIL = ""
 
 all:
 
+
 ls:
 	@$(foreach val, $(DOTFILES), /bin/ls -dF $(val);)
 
