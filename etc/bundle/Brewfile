@@ -47,4 +47,5 @@ cask "deepl"
 cask "obs"
 cask "obs-virtualcam"
 cask "tableplus"
+cask "notion"
 mas "CotEditor", id: 1024640650
