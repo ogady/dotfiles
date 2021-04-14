@@ -32,6 +32,10 @@ function select-history() {
 zle -N select-history
 bindkey '^r' select-history
 
+##############
+# timeコマンド
+##############
+TIMEFMT=$'\n\n========================\nProgram : %J\nCPU     : %P\nuser    : %*Us\nsystem  : %*Ss\ntotal   : %*Es\n========================\n'
 
 ##############
 # alias
