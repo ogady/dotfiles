@@ -13,6 +13,8 @@ brew "peco"
 brew "tree"
 brew "exa"
 brew "wget"
+brew "jq"
+brew "curl"
 
 # ========== App Tools ==========
 brew "awscli"
