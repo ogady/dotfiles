@@ -51,6 +51,7 @@ alias d='docker'
 alias dps='docker ps'
 alias dpsa='docker ps -a'
 alias dc='docker-compose'
+alias drm='docker system prune -a --volumes'
 
 ## git alias
 alias -g lb='`git branch | peco --prompt "GIT BRANCH>" | head -n 1 | sed -e "s/^\*\s*//g"`'
