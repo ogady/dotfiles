@@ -20,6 +20,8 @@ brew "curl"
 brew "awscli"
 brew "jmeter"
 brew "vegeta"
+brew "kubectl"
+brew "helm"
 
 brew "tfenv"
 brew "tflint"
