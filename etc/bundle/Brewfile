@@ -17,16 +17,24 @@ brew "jq"
 brew "curl"
 
 # ========== App Tools ==========
+# aws
 brew "awscli"
-brew "jmeter"
-brew "vegeta"
-brew "kubectl"
-brew "helm"
 
+# terraform
 brew "tfenv"
 brew "tflint"
 
+# load test
+brew "jmeter"
+brew "vegeta"
+
+# node
 brew "nodebrew"
+
+# k8s
+brew "kubectl"
+brew "helm"
+brew "kustomize"
 
 # ========== Languages ==========
 brew "go"
