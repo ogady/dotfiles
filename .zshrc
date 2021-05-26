@@ -55,6 +55,9 @@ alias drm='docker system prune -a --volumes'
 ## git alias
 alias -g lb='`git branch | peco --prompt "GIT BRANCH>" | head -n 1 | sed -e "s/^\*\s*//g"`'
 
+## ghq alias
+alias g='cd $(ghq root)/$(ghq list | peco)'
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
