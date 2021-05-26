@@ -19,6 +19,8 @@ deploy:
 	
 	# dotfilesのシンボリックリンク作成
 	@$(foreach val, $(DOTFILES), ln -sfnv $(abspath $(val)) $(HOME)/$(val);)
+	# preztoのシンボリックリンク作成
+	@ln -sf ~/dotfiles/prezto ~/.zprezto
 
 	@echo '==> End to deploy dotfiles.'
 
