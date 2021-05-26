@@ -5,7 +5,7 @@ tap "homebrew/cask"
 tap "homebrew/bundle"
 tap "homebrew/services"
 cask_args appdir: "/Applications"
-
+brew "mas"
 # ========== General Tools ==========
 brew "git"
 brew "ghq"
@@ -17,9 +17,6 @@ brew "jq"
 brew "curl"
 
 # ========== App Tools ==========
-# aws
-brew "awscli"
-
 # terraform
 brew "tfenv"
 brew "tflint"
@@ -47,7 +44,7 @@ cask "docker"
 cask "kindle"
 cask "iterm2"
 cask "figma"
-cask "zoomus"
+cask "zoom"
 cask "postman"
 cask "cyberduck"
 cask "gpg-suite"
@@ -57,7 +54,5 @@ cask "visual-studio-code"
 cask "google-japanese-ime"
 cask "deepl"
 cask "obs"
-cask "obs-virtualcam"
 cask "tableplus"
 cask "notion"
-mas "CotEditor", id: 1024640650
