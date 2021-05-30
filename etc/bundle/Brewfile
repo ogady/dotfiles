@@ -37,6 +37,9 @@ brew "kustomize"
 # ========== Languages ==========
 brew "go"
 
+# ========== gRPC ==========
+brew "protobuf"
+
 # ========== Applications ==========
 cask "clipy"
 cask "shiftit"
