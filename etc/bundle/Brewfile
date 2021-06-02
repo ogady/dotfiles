@@ -17,6 +17,8 @@ brew "wget"
 brew "jq"
 brew "curl"
 brew "direnv"
+brew "git-secrets"
+brew "rbenv"
 
 # ========== App Tools ==========
 # terraform

@@ -25,3 +25,5 @@
 [ghq]
     root = ~/dev
     root = ~/dev/src
+[url "git@github.com:"]
+	insteadOf = https://github.com/
