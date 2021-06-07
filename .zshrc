@@ -10,6 +10,18 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+############################
+# 分割ファイルの読み込み
+############################
+ZSHHOME="${HOME}/dotfiles/.zsh"
+
+if [ -d $ZSHHOME -a -r $ZSHHOME -a \
+     -x $ZSHHOME ]; then
+    for i in $ZSHHOME/*; do
+        [[ ${i##*/} = *.zsh ]] &&
+            [ \( -f $i -o -h $i \) -a -r $i ] && . $i
+    done
+fi
 
 # Customize to your needs...
 
@@ -35,28 +47,6 @@ bindkey '^r' select-history
 # timeコマンド
 ##############
 TIMEFMT=$'\n\n========================\nProgram : %J\nCPU     : %P\nuser    : %*Us\nsystem  : %*Ss\ntotal   : %*Es\n========================\n'
-
-##############
-# alias
-##############
-alias ls='exa'
-alias cp='cp -i'
-alias mv='mv -i'
-alias ls='ls -Ga'
-alias ll='ls -lGa'
-
-## docker alias
-alias d='docker'
-alias dps='docker ps'
-alias dpsa='docker ps -a'
-alias dc='docker-compose'
-alias drm='docker system prune -a --volumes'
-
-## git alias
-alias -g lb='`git branch | peco --prompt "GIT BRANCH>" | head -n 1 | sed -e "s/^\*\s*//g"`'
-
-## ghq alias
-alias gcd='cd $(ghq root)/$(ghq list | peco)'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
