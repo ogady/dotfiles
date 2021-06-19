@@ -59,3 +59,4 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 eval "$(direnv hook zsh)"
+export PATH=$HOME/.nodebrew/current/bin:$PATH
