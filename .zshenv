@@ -27,3 +27,4 @@ export GHQ_ROOT=$GOPATH/src
 # gcp sdk
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
+. "$HOME/.cargo/env"
