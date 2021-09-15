@@ -59,4 +59,13 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 eval "$(direnv hook zsh)"
+eval "$(pyenv init -)"
 export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/shims:$PATH"
+export PATH="/usr/local/opt/bzip2/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/bzip2/lib"
+export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/bzip2/include"
+
+export PATH="/usr/local/bin:$PATH"
