@@ -47,7 +47,7 @@ brew "protobuf"
 
 # ========== Applications ==========
 cask "clipy"
-cask "shiftit"
+cask "rectangle"
 cask "slack"
 cask "docker"
 cask "kindle"

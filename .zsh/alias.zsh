@@ -22,3 +22,6 @@ alias gcd='cd $(ghq root)/$(ghq list | peco)'
 
 ## intellij
 alias idea='open -na "IntelliJ IDEA.app" --args "$@"'
+
+## kubectl
+alias k='kubectl'
