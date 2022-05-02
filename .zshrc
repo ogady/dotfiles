@@ -62,9 +62,6 @@ eval "$(direnv hook zsh)"
 eval "$(pyenv init -)"
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
-eval "$(goenv init -)"
-export PATH="$HOME/.goenv/bin:$PATH"
-
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/shims:$PATH"
 export PATH="/usr/local/opt/bzip2/bin:$PATH"

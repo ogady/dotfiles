@@ -40,7 +40,7 @@ brew "helm"
 brew "kustomize"
 
 # ========== Languages ==========
-brew "goenv"
+brew "go"
 
 # ========== gRPC ==========
 brew "protobuf"
