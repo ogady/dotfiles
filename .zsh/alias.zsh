@@ -19,6 +19,7 @@ alias -g lb='`git branch | peco --prompt "GIT BRANCH>" | head -n 1 | sed -e "s/^
 
 ## ghq alias
 alias gcd='cd $(ghq root)/$(ghq list | peco)'
+alias gbrs='gh browse -R  $(ghq list | peco | cut -d "/" -f 2,3)'
 
 ## intellij
 alias idea='open -na "IntelliJ IDEA.app" --args "$@"'
