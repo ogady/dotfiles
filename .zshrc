@@ -78,3 +78,5 @@ export GODEBUG=asyncpreemptoff=1
 
 # https://krew.sigs.k8s.io/docs/user-guide/setup/install/
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+export PATH="$HOME/dev/bin:$PATH"
