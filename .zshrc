@@ -67,4 +67,3 @@ source '/usr/local/share/zsh/site-functions/_google-cloud-sdk/completion.zsh.inc
 
 eval "$(direnv hook zsh)"
 eval "$(pyenv init -)"
-
