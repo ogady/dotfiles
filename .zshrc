@@ -62,7 +62,7 @@ fi
 [[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh)
 
 # gcloud completion
-source '/usr/local/share/zsh/site-functions/_google-cloud-sdk/completion.zsh.inc'
+source '/opt/homebrew/share/google-cloud-sdk/completion.zsh.inc'
 
 
 eval "$(direnv hook zsh)"
