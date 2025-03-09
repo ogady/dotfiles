@@ -27,3 +27,6 @@ alias idea='open -na "IntelliJ IDEA.app" --args "$@"'
 
 ## kubectl
 alias k='kubectl'
+
+alias python="python3"
+alias pip="pip3"
