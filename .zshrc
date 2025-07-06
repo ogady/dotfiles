@@ -68,3 +68,16 @@ source '/opt/homebrew/share/google-cloud-sdk/completion.zsh.inc'
 eval "$(direnv hook zsh)"
 eval "$(pyenv init -)"
 eval "$(nodenv init -)"
+
+# Claude Code Switch Bedrock <-> Claude
+claude_bedrock() {
+  CLAUDE_CODE_USE_BEDROCK=1 ANTHROPIC_MODEL=us.anthropic.claude-sonnet-4-20250514-v1:0 ANTHROPIC_SMALL_FAST_MODEL=us.anthropic.claude-3-5-haiku-20241022-v1:0 CLAUDE_CODE_MAX_OUTPUT_TOKENS=8192 claude
+}
+
+claude_pro() {
+  unset CLAUDE_CODE_USE_BEDROCK
+  unset ANTHROPIC_MODEL
+  unset ANTHROPIC_SMALL_FAST_MODEL
+  unset CLAUDE_CODE_MAX_OUTPUT_TOKENS
+  claude
+}
